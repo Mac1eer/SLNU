@@ -23,11 +23,13 @@ static double MethodBisection(double a, double b, double tol) //Создаем �
     }
     return c;
 }
-    double a = -3;
-    double b = -2;
-    double tol = 0.0001;
-    double result = MethodBisection(a, b, tol);
-    Console.WriteLine($"Ответ: {result}");
+        Console.WriteLine("Введите a");
+        int a = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Введите b");
+        int b = Convert.ToInt32(Console.ReadLine());
+        double tol = 0.0001;
+        double result = MethodBisection(a, b, tol);
+        Console.WriteLine($"Ответ: {result}");
 
 
 
